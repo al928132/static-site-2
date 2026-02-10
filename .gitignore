@@ -1,0 +1,5 @@
+.mcp.json
+.env
+.env.*
+*.generated_images
+*_thumb.jpeg
