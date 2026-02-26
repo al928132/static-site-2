@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Barber's</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>BARBER'S</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="nav-auth-item"></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h2 class="page-title">Your Profile</h2>
+            <p class="page-subtitle">Manage your account details</p>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-container">
+
+                <!-- Avatar Card -->
+                <div class="profile-card avatar-card">
+                    <div class="avatar-circle" id="avatar-circle">
+                        <img src="" alt="Profile photo" id="avatar-img" class="hidden">
+                        <svg id="avatar-placeholder-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+                        </svg>
+                    </div>
+                    <button type="button" class="secondary-button avatar-upload-btn" id="avatar-upload-btn">
+                        Change Photo
+                    </button>
+                    <div class="avatar-picker hidden" id="avatar-picker">
+                        <p class="avatar-picker-label">Choose an avatar</p>
+                        <div class="avatar-picker-grid">
+                            <img src="images/avatars/avatar-1.svg" class="avatar-option" data-src="images/avatars/avatar-1.svg" alt="Avatar 1">
+                            <img src="images/avatars/avatar-2.svg" class="avatar-option" data-src="images/avatars/avatar-2.svg" alt="Avatar 2">
+                            <img src="images/avatars/avatar-3.svg" class="avatar-option" data-src="images/avatars/avatar-3.svg" alt="Avatar 3">
+                            <img src="images/avatars/avatar-4.svg" class="avatar-option" data-src="images/avatars/avatar-4.svg" alt="Avatar 4">
+                            <img src="images/avatars/avatar-5.svg" class="avatar-option" data-src="images/avatars/avatar-5.svg" alt="Avatar 5">
+                            <img src="images/avatars/avatar-6.svg" class="avatar-option" data-src="images/avatars/avatar-6.svg" alt="Avatar 6">
+                        </div>
+                    </div>
+                    <button type="button" class="cta-button profile-submit hidden" id="avatar-save-btn">
+                        Save Photo
+                    </button>
+                    <p class="profile-message" id="avatar-message"></p>
+                </div>
+
+                <!-- Display Name Card -->
+                <div class="profile-card">
+                    <h3 class="profile-card-heading">Display Name</h3>
+                    <form class="profile-form" id="name-form">
+                        <div class="form-group">
+                            <label for="profile-name">Name</label>
+                            <input type="text" id="profile-name" placeholder="Your display name">
+                        </div>
+                        <button type="submit" class="cta-button profile-submit">Save Name</button>
+                        <p class="profile-message" id="name-message"></p>
+                    </form>
+                </div>
+
+                <!-- Email Card -->
+                <div class="profile-card">
+                    <h3 class="profile-card-heading">Email Address</h3>
+                    <form class="profile-form" id="email-form">
+                        <div class="form-group">
+                            <label for="profile-email">Email</label>
+                            <input type="email" id="profile-email" placeholder="you@example.com">
+                        </div>
+                        <button type="submit" class="cta-button profile-submit">Save Email</button>
+                        <p class="profile-message" id="email-message"></p>
+                    </form>
+                </div>
+
+                <!-- Password Card -->
+                <div class="profile-card">
+                    <h3 class="profile-card-heading">Password</h3>
+                    <form class="profile-form" id="password-form">
+                        <div class="form-group">
+                            <label for="profile-password">New Password</label>
+                            <input type="password" id="profile-password" placeholder="At least 6 characters">
+                        </div>
+                        <div class="form-group">
+                            <label for="profile-password-confirm">Confirm New Password</label>
+                            <input type="password" id="profile-password-confirm" placeholder="Repeat new password">
+                        </div>
+                        <button type="submit" class="cta-button profile-submit">Save Password</button>
+                        <p class="profile-message" id="password-message"></p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BARBER'S</h3>
+                    <p>Luxury barbering in Orlando</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Monday - Friday: 9:00 AM - 7:00 PM</p>
+                    <p>Saturday: 9:00 AM - 6:00 PM</p>
+                    <p>Sunday: Closed</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>123 Main Street</p>
+                    <p>Orlando, FL 32801</p>
+                    <p>Phone: (407) 555-0123</p>
+                    <p>Email: info@barbers.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Barber's. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+    <script src="js/firebase-init.js"></script>
+    <script src="js/nav-auth.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+
+</html>

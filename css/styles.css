@@ -819,6 +819,257 @@ body {
     }
 }
 
+/* Nav Auth State */
+#nav-auth-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-user {
+    opacity: 0.85;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Account Page Styles */
+.account-section {
+    padding: 5rem 0;
+}
+
+.account-card {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(60, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.account-tabs {
+    display: flex;
+    border-bottom: 2px solid #F1E9DB;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 1.1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #5F7681;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+}
+
+.tab-btn:hover {
+    color: #3C0000;
+}
+
+.tab-btn.active {
+    color: #3C0000;
+    border-bottom-color: #D6431F;
+}
+
+.tab-panel {
+    padding: 2.5rem;
+}
+
+.tab-panel.hidden {
+    display: none;
+}
+
+.account-heading {
+    font-size: 1.6rem;
+    color: #3C0000;
+    font-weight: 700;
+    margin-bottom: 1.75rem;
+}
+
+.account-form .form-group {
+    margin-bottom: 1.25rem;
+}
+
+.account-submit {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.account-message {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    min-height: 1.4rem;
+}
+
+.account-message.success {
+    color: #2e7d32;
+}
+
+.account-message.error {
+    color: #D6431F;
+}
+
+.account-switch {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #5F7681;
+}
+
+.account-switch a {
+    color: #D6431F;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.account-switch a:hover {
+    text-decoration: underline;
+}
+
+/* Profile Page Styles */
+.profile-section {
+    padding: 5rem 0;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 16px rgba(60, 0, 0, 0.08);
+}
+
+.avatar-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.avatar-circle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #5F7681;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: #F1E9DB;
+}
+
+.avatar-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#avatar-placeholder-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.avatar-picker {
+    text-align: center;
+}
+
+.avatar-picker-label {
+    font-size: 0.9rem;
+    color: #5F7681;
+    margin-bottom: 0.75rem;
+}
+
+.avatar-picker-grid {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.avatar-option {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.avatar-option:hover {
+    transform: scale(1.1);
+}
+
+.avatar-option.selected {
+    border-color: #D6431F;
+}
+
+.avatar-upload-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.profile-card-heading {
+    font-size: 1.3rem;
+    color: #3C0000;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.profile-form .form-group {
+    margin-bottom: 1.25rem;
+}
+
+.profile-submit {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+}
+
+.profile-message {
+    margin-top: 0.875rem;
+    font-size: 0.95rem;
+    min-height: 1.4rem;
+}
+
+.profile-message.success {
+    color: #2e7d32;
+}
+
+.profile-message.error {
+    color: #D6431F;
+}
+
+.hidden {
+    display: none;
+}
+
 @media (max-width: 480px) {
     .navbar .container {
         flex-direction: column;
